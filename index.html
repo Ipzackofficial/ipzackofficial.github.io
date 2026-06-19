@@ -3,91 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LP Zack Official | Zubakaya</title>
+    <title>Ip Zack | Zubakaya</title>
     <style>
+        :root {
+            --green: #006400;
+            --darkgreen: #1e3a1e;
+        }
+        * {
+            box-sizing: border-box;
+        }
         body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            background: linear-gradient(135deg, #006400, #1e3a1e);
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background: linear-gradient(135deg, var(--green), var(--darkgreen));
             color: white;
             margin: 0;
-            padding: 20px;
+            padding: 20px 15px;
             text-align: center;
             min-height: 100vh;
+            line-height: 1.5;
         }
         .container {
-            max-width: 600px;
-            margin: 40px auto;
+            max-width: 520px;
+            margin: 30px auto;
         }
         .profile {
-            width: 160px;
-            height: 160px;
+            width: 168px;
+            height: 168px;
             border-radius: 50%;
-            border: 6px solid white;
-            margin: 20px auto;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            border: 6px solid rgba(255,255,255,0.9);
+            margin: 0 auto 20px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+            object-fit: cover;
         }
         h1 {
-            margin: 10px 0 5px;
-            font-size: 2.2em;
+            font-size: 2.4em;
+            margin: 8px 0 4px;
+            font-weight: 700;
         }
         .handle {
-            font-size: 1.1em;
-            opacity: 0.9;
-            margin-bottom: 10px;
+            font-size: 1.15em;
+            opacity: 0.85;
+            margin-bottom: 8px;
         }
         .bio {
-            font-size: 1.15em;
-            margin-bottom: 35px;
+            font-size: 1.1em;
+            margin: 0 auto 35px;
+            max-width: 420px;
             opacity: 0.95;
-            line-height: 1.4;
         }
         .link-button {
-            display: block;
-            background: rgba(255,255,255,0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            background: rgba(255,255,255,0.12);
             color: white;
             text-decoration: none;
             padding: 16px 20px;
-            margin: 12px auto;
+            margin: 10px auto;
             border-radius: 50px;
-            font-weight: bold;
-            font-size: 1.05em;
-            transition: all 0.3s ease;
+            font-weight: 600;
+            font-size: 1.08em;
+            transition: all 0.25s ease;
             max-width: 420px;
+            backdrop-filter: blur(5px);
         }
         .link-button:hover {
             background: white;
-            color: #006400;
-            transform: translateY(-3px);
+            color: var(--green);
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
         }
         .footer {
-            margin-top: 40px;
+            margin-top: 45px;
             font-size: 1em;
-            opacity: 0.8;
+            opacity: 0.75;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Replace this placeholder with your real photo later -->
-        <img src="https://via.placeholder.com/160" alt="LP Zack" class="profile">
+        <!-- Your uploaded profile photo -->
+        <img src="profile.jpg" alt="LP Zack" class="profile">
         
-        <h1>LP Zack</h1>
+        <h1>Ip Zack</h1>
         <p class="handle">@lpzackofficial</p>
         <p class="bio">Kenyan artist pioneering the <strong>Zubakaya</strong> genre<br>
-        Blending traditional Kenyan sounds with fresh modern vibes 🇰🇪</p>
+        Ancient drums, dancehall bass &amp; pure soul frequencies 🇰🇪</p>
         
-        <!-- Add your real links here -->
-        <a href="https://open.spotify.com/artist/YOUR_SPOTIFY_LINK" class="link-button" target="_blank">🎵 Listen on Spotify</a>
-        <a href="https://youtube.com/@YOUR_YOUTUBE" class="link-button" target="_blank">▶️ YouTube</a>
-        <a href="https://instagram.com/lpzackofficial" class="link-button" target="_blank">📸 Instagram</a>
-        <a href="https://twitter.com/lpzackofficial" class="link-button" target="_blank">𝕏 Twitter / X</a>
-        <a href="https://tiktok.com/@lpzackofficial" class="link-button" target="_blank">🎤 TikTok</a>
-        <a href="https://wa.me/2547XXXXXXXX" class="link-button" target="_blank">💬 WhatsApp</a>
-        <a href="https://lpzackofficial.github.io" class="link-button" target="_blank">🌐 Full Website</a>
+        <!-- Your Real Links -->
+        <a href="https://www.youtube.com/@Zubakaya" class="link-button" target="_blank">▶️ YouTube</a>
+        <a href="https://tiktok.com/@zubakaya" class="link-button" target="_blank">🎤 TikTok</a>
+        <a href="https://www.facebook.com/share/18tuFiAdjA/" class="link-button" target="_blank">📘 Facebook</a>
+        <a href="https://lpzackofficial.github.io/ipzack/" class="link-button" target="_blank">🌐 Official Website</a>
+        <a href="https://wa.me/254719325574" class="link-button" target="_blank">💬 WhatsApp</a>
+        
+        <!-- Add more links when ready -->
+        <!-- <a href="YOUR_SPOTIFY_LINK" class="link-button" target="_blank">🎵 Spotify</a> -->
+        <!-- <a href="YOUR_INSTAGRAM_LINK" class="link-button" target="_blank">📸 Instagram</a> -->
+        <!-- <a href="YOUR_TWITTER_LINK" class="link-button" target="_blank">𝕏 Twitter / X</a> -->
         
         <div class="footer">
             Pioneering Zubakaya • Made in Kenya
         </div>
     </div>
 </body>
-  </html>
+</html>
